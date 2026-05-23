@@ -1,7 +1,7 @@
 @extends('products.layout')
 
 @section('title', 'Products')
-@section('heading', 'Products')
+@section('heading', 'Products List')
 
 @section('header_action')
     <a class="button" href="{{ route('products.create') }}">Add Product</a>
