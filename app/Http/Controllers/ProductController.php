@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 class ProductController extends Controller
 {
@@ -104,5 +106,24 @@ class ProductController extends Controller
             'description' => ['nullable', 'string'],
             'price' => ['required', 'numeric', 'min:0'],
         ]);
+    }
+
+    public function uplpoadForm(Request $request) {
+        return view('file');
+    }
+
+
+    public function upload(Request $request)
+    {
+        $request->validate([
+            'file' => 'required'
+        ]);
+
+        $path = Storage::disk('s3')->put(
+            'documents',
+            $request->file('file')
+        );
+
+        return $path;
     }
 }
