@@ -125,8 +125,9 @@ class ProductController extends Controller
             $request->file('file'),
             'public'
         );
+        dd($path);
 
-        $url = Storage::disk('s3')->url($path);
-        return $url;
+        // $url = Storage::disk('s3')->url($path);
+        // return $url;
     }
 }
