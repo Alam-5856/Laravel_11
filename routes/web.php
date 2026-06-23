@@ -19,6 +19,6 @@ Route::get('/', function () {
 });
 
 Route::resource('products', ProductController::class);
-Route::get('upload-file', ProductController::class, 'uplpoadForm');
+Route::get('upload-file', [ProductController::class, 'uplpoadForm']);
 Route::post('/upload',[ProductController::class,'upload'])
     ->name('upload');
