@@ -109,7 +109,7 @@ class ProductController extends Controller
     }
 
     public function uplpoadForm(Request $request) {
-        return view('file');
+        return view('s3file');
     }
 
 
