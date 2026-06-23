@@ -124,7 +124,7 @@ class ProductController extends Controller
             'documents',
             $request->file('file')
         );
-        dd($path);
-        return $path;
+        $url = Storage::disk('s3')->url($path);
+        return $url;
     }
 }
