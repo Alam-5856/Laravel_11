@@ -115,7 +115,7 @@ class ProductController extends Controller
 
     public function upload(Request $request)
     {
-        dd($request->all(), $request->file('file'));
+        // dd($request->all(), $request->file('file'));
         $request->validate([
             'file' => 'required'
         ]);
@@ -124,7 +124,7 @@ class ProductController extends Controller
             'documents',
             $request->file('file')
         );
-
+        dd($path);
         return $path;
     }
 }
