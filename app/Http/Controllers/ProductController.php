@@ -115,6 +115,7 @@ class ProductController extends Controller
 
     public function upload(Request $request)
     {
+        dd($request->all(), $request->file('file'));
         $request->validate([
             'file' => 'required'
         ]);
