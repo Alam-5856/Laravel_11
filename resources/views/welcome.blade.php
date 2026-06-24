@@ -384,7 +384,7 @@
                     <span class="status-pill"><span class="status-dot"></span> Online</span>
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ route('/products.index') }}">Dashboard</a>
+                            <a href="{{ route('products.index') }}">Dashboard</a>
                         @else
                             <a href="{{ route('login') }}">Log in</a>
                             @if (Route::has('register'))
@@ -407,7 +407,7 @@
                     </div>
 
                     <div class="actions">
-                        <a class="button primary" href="{{ route('/products.index') }}">Open Workspace</a>
+                        <a class="button primary" href="{{ route('products.index') }}">Open Workspace</a>
                         <a class="button" href="https://laravel.com/docs" target="_blank" rel="noreferrer">Laravel Docs</a>
                     </div>
                 </div>
