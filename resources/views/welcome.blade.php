@@ -384,7 +384,7 @@
                     <span class="status-pill"><span class="status-dot"></span> Online</span>
                     @if (Route::has('login'))
                         @auth
-                            <a href="{{ url('/home') }}">Dashboard</a>
+                            <a href="{{ route('/products.index') }}">Dashboard</a>
                         @else
                             <a href="{{ route('login') }}">Log in</a>
                             @if (Route::has('register'))
