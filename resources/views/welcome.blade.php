@@ -407,7 +407,7 @@
                     </div>
 
                     <div class="actions">
-                        <a class="button primary" href="{{ url('/home') }}">Open Workspace</a>
+                        <a class="button primary" href="{{ route('/products.index') }}">Open Workspace</a>
                         <a class="button" href="https://laravel.com/docs" target="_blank" rel="noreferrer">Laravel Docs</a>
                     </div>
                 </div>
