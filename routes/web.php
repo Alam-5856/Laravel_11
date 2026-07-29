@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
+use App\Jobs\SendWelcomeEmailJob;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,8 @@ Route::resource('products', ProductController::class);
 Route::get('upload-file', [ProductController::class, 'uplpoadForm']);
 Route::post('/upload',[ProductController::class,'upload'])
     ->name('upload');
+
+Route::get('/test-job', function () {
+    SendWelcomeEmailJob::dispatch();
+    return "Job Added Successfully";
+});
