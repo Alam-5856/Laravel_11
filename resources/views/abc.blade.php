@@ -518,7 +518,7 @@
 
         <div class="shell hero-inner text-center">
             <div class="d-flex justify-content-center mb-4">
-                <img src="/flying-monk/logo.png" alt="Flying Monk Logo" class="hero-logo">
+                <img src="/logo.png" alt="Flying Monk Logo" class="hero-logo">
             </div>
 
             <h1>Flying Monk Soul Awakening</h1>
@@ -573,7 +573,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="about-photo-wrap">
-                        <img src="/flying-monk/vivek.jpg" alt="Vivek - Flying Monk" class="about-photo">
+                        <img src="/vivek.jpg" alt="Vivek - Flying Monk" class="about-photo">
                     </div>
                 </div>
 
@@ -1240,7 +1240,7 @@
             <div class="row g-5 mb-4">
                 <div class="col-md-6">
                     <div class="d-flex align-items-center gap-3 mb-4">
-                        <img src="/flying-monk/logo.png" alt="Flying Monk Logo" style="width:5rem; height:5rem;">
+                        <img src="/logo.png" alt="Flying Monk Logo" style="width:5rem; height:5rem;">
                         <div>
                             <h3 class="fs-3 m-0">Flying Monk</h3>
                             <p class="text-orange-200 m-0">Soul Awakening</p>
