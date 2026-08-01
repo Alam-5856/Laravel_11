@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('test', function () {
+    return view('abc');
+});
+
 Route::resource('products', ProductController::class);
 Route::get('upload-file', [ProductController::class, 'uplpoadForm']);
 Route::post('/upload',[ProductController::class,'upload'])
