@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('test', function () {
-    return view('abc');
+    //return view('abc');
 });
 
 Route::resource('products', ProductController::class);
